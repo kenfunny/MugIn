@@ -1,9 +1,9 @@
-<!--Contact Page for MugIn app-->
+<!--About Page for MugIn App-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>MugInContact</title>
+	<title>MugIn | About</title>
 	<meta charset "utf=8" />
 	<link rel="stylesheet" href="../stylesheets/style.css" type="text/css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,22 @@
 <body class="body">
 	<header class="mainHeader">
 		<!--Header logo-->
-		<a href ="../">
+		<a href ="../mugin">
 			<img src="../images/MugIn.png">
 		</a>
-		
-		<!--Login feature-->
-		<side class="login">
-			<a href="../about" title="Login to Google Account!">Login</a>
-		</side>
-		<side class="register">
-			<a href="https://accounts.google.com/signup?service=mail" title="Get a Google Account!">Register</a>
-		</side>
-		<!--Login feature ends-->
 
-		<!--Navigation bar with Contact emphasis-->
+		<!--User greeting-->
+		<side class="login">
+			<span> Hello, {{ user_mail }}  <a href="{{ logout }}">logout</a></span>
+		</side>
+		<!--User greeting ends-->
+
+		<!--Navigation bar with About emphasis-->
 		<nav><ul>
-			<li><a href="../">Home</a></li>
-			<li><a href="../about">About</a></li>
+			<li><a href="../mugin">Home</a></li>
+			<li class="active"><a href="../about">About</a></li>
 			<li><a href="../service">Services</a></li>
-			<li class="active"><a href="../contact">Contact Us</a></li>
+			<li><a href="../contact">Contact Us</a></li>
 		</ul></nav>
 		<!--Navigation bar ends-->
 
@@ -38,13 +35,13 @@
 	<!--Description/Content container-->
 	<div class="description">
 		<p id="title">
-			Contact Us
+			About us
 		</p>
 		<p>
-			Any problem or feedback please email us at info.MugIn@gmail.com
+			We aim to provide real time update on various study places in NUS. Therefore, user can decide where to go and study in the condusive environment.
 		</p>
 	</div>
-	<!--Description ends-->
+	<!--Description end-->
 
 	<!--Copyright footer-->
 	<footer class="mainFooter">

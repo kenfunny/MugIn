@@ -1,4 +1,4 @@
-<!--Home Page for MugIn App-->
+<!--Home Page for logged in users-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,22 +12,19 @@
 <body class="body">
 	<header class="mainHeader">
 		<!--Header Logo-->
-		<a href ="../">
+		<a href ="../mugin">
 			<img src="../images/MugIn.png"> 
 		</a>
 
-		<!--Login feature-->
+		<!--User greeting-->
 		<side class="login">
-			<a href="../mugin" title="Login to Google Account!">Login</a>
+			<span> Hello, {{ user_mail }}  <a href="{{ logout }}">logout</a></span>
 		</side>
-		<side class="register">
-			<a href="https://accounts.google.com/signup?service=mail" title="Get a Google Account!">Register</a>
-		</side>
-		<!--Login feature ends-->
+		<!--User greeting ends-->
 
 		<!--Navigation bar with Home emphasis-->
 		<nav><ul>
-			<li class="active"><a href="../">Home</a></li>
+			<li class="active"><a href="../mugin">Home</a></li>
 			<li><a href="../about">About</a></li>
 			<li><a href="../service">Services</a></li>
 			<li><a href="../contact">Contact Us</a></li>
@@ -47,7 +44,7 @@
 	</div>
 	<!--Description end-->
 
-	<!--Top Spots-->
+    <!--Top spots-->
 	<div class="photoContainer">
 		<p> Top Spots </p>
 		<img src="../images/starbucks.jpe">
@@ -59,7 +56,7 @@
 	<footer class="mainFooter">
 		<p>Copyright &copy<a href="a" title="myWebsite">2014</a></p>
 	</footer>
-	<!--Footer end-->
+	<!--Footer ends-->
 
 </body>
 </html>

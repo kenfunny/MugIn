@@ -23,10 +23,14 @@ handlers:
 - url: /
   script: mugin.app
 
+- url: /mugin
+  script: mugin.app
+  login: required
+
 # All other pages require login
 - url: /.*
   script: mugin.app
-#  login: required
+  login: optional
 
 libraries:
 - name: jinja2

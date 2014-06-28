@@ -12,22 +12,19 @@
 <body class="body">
 	<header class="mainHeader">
 		<!--Header logo-->
-		<a href ="../">
+		<a href ="../mugin">
 			<img src="../images/MugIn.png">
 		</a>
 		
-		<!--Login feature-->
+		<!--User greeting-->
 		<side class="login">
-			<a href="../about" title="Login to Google Account!">Login</a>
+			<span> Hello, {{ user_mail }}  <a href="{{ logout }}">logout</a></span>
 		</side>
-		<side class="register">
-			<a href="https://accounts.google.com/signup?service=mail" title="Get a Google Account!">Register</a>
-		</side>
-		<!--Login feature ends-->
+		<!--User greeting ends-->
 
 		<!--Navigation bar with Contact emphasis-->
 		<nav><ul>
-			<li><a href="../">Home</a></li>
+			<li><a href="../mugin">Home</a></li>
 			<li><a href="../about">About</a></li>
 			<li><a href="../service">Services</a></li>
 			<li class="active"><a href="../contact">Contact Us</a></li>

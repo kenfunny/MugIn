@@ -151,64 +151,72 @@ a:link, a:visited{
 	color:white;
 }
 
+.signin-align {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    padding-right: 40px;
+}
+
+
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
-	width:90%;
-	font-size: 95%;
+		width:90%;
+		font-size: 95%;
 	}
 
 	.mainHeader img {
-	width: 100%;
-	height: auto;
-	margin: 2% 0;
+		width: 100%;
+		height: auto;
+		margin: 2% 0;
 	}
- 
+
 	.mainHeader nav { 
-	height: 160px; 
+		height: 160px; 
 
-}
+	}
 
-.mainHeader nav ul{	
-	padding-left: 0;
-}
+	.mainHeader nav ul{	
+		padding-left: 0;
+	}
 
-.mainHeader nav ul li{
-	width: 100%;
-	text-align: center;
-}
+	.mainHeader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
 
 
-.mainHeader nav a:hover, .mainHeader nav a:active,
-.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
-	background-color: #CF5C3F;
-	text-shadow:none;
-	display: block;
-}
+	.mainHeader nav a:hover, .mainHeader nav a:active,
+	.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+		background-color: #CF5C3F;
+		text-shadow:none;
+		display: block;
+	}
 
-.mainHeader nav ul li a {
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
+	.mainHeader nav ul li a {
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
 
-.photoContainer img{
-	width: 100%;
-	height: 0 auto;
-}
+	.photoContainer img{
+		width: 100%;
+		height: 0;
+	}
 
-.description{
-	width: 96%;
-	
-}
+	.description{
+		width: 96%;
 
-.description #title{
-	font-size: 22px;
-	padding-left: 2%;
-}
+	}
 
-.description p {
-	font-size: 14px;
-	padding-left: 2%;
-}
+	.description #title{
+		font-size: 22px;
+		padding-left: 2%;
+	}
+
+	.description p {
+		font-size: 14px;
+		padding-left: 2%;
+	}
 
 }
