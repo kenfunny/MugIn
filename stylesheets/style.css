@@ -1,6 +1,6 @@
 img{
 	width: 30%;
-	height: auto;
+	height: 200px;
 	margin: 2% 0;
 
 }
@@ -75,13 +75,12 @@ a:link, a:visited{
 }
 
 .description{
-	width:60%;
+	width:96%;
 	background-color: #CF5C3F;
-	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding: 0 2%;
+	padding: 0.5% 2%;
 	margin: 1% 0;
 	
 }
@@ -98,20 +97,32 @@ a:link, a:visited{
 }
 
 .service{
-	width:60%;
-	background-color: white;
 	display: inline-block;
+	float: center;
+	width:29%;
+	min-height: auto;
+	background-color: white;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding: 0 2%;
+	padding: 1% 2%;
 	margin: 1% 0;
 
 }
 
 .service p {
-
 	font-size: 22px;
+
+}
+
+.service img{
+	float: center;
+	width:98%;
+	height:170px;
+}
+
+.servicecontent p {
+	font-size: 14px;
 }
 
 .login{
