@@ -97,6 +97,23 @@ a:link, a:visited{
 	font-size: 24px;
 }
 
+.service{
+	width:60%;
+	background-color: white;
+	display: inline-block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0 2%;
+	margin: 1% 0;
+
+}
+
+.service p {
+
+	font-size: 22px;
+}
+
 .login{
 	background-color: white;
 	float: right;
