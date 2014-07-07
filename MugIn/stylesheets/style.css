@@ -7,7 +7,8 @@ img{
 body{
 	background-color: lightgrey;
 	font-size: 87.5%;
-	font-family: sans-serif,arial;
+	width:70%;
+	font-family: Century Gothic, sans-serif;
 	line-height: 1.5;
 	text-align: left;
 }
@@ -52,7 +53,7 @@ a:link, a:visited{
 	float:left;
 	display:inline;
 	list-style: none;
-
+	font-size: 14.5px;
 }
 
 .mainHeader nav a:link, .mainHeader nav a:visited{
@@ -60,12 +61,14 @@ a:link, a:visited{
 	display: inline-block;
 	padding: 9px 20px;
 	list-style: none;
+	
 }
 
 .mainHeader nav a:hover, .mainHeader nav a:active,
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited{
 	background-color: #CF5C3F;
 	text-shadow:none;
+	text-decoration: none;
 }
 
 .mainHeader nav ul li a {
@@ -75,31 +78,33 @@ a:link, a:visited{
 }
 
 .description{
-	width:60%;
+	width:100%;
 	background-color: #CF5C3F;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding: 0 2%;
+	padding-right: 30%;
+	padding-left: 3%;
 	margin: 1% 0;
 	
 }
 
 .description #title{
 	font-size: 36px;
-	font-family: verdana,arial;
+	font-family: Century Gothic, sans-serif;
 	padding: 1% 0;
 	
 }
 
 .description p {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .login{
 	background-color: white;
 	float: right;
+	font-size: 15px;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -109,9 +114,14 @@ a:link, a:visited{
 	margin: 1% 0;
 }
 
+.login a:hover,.register a:hover{
+	text-decoration: none;
+}
+
 .register{
 	background-color: white;
 	float: right;
+	font-size: 15px;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -146,77 +156,70 @@ a:link, a:visited{
 }
 
 .mainFooter p{
+	font-size: 14px;
 	width: 92%;
 	margin: 1% auto;
 	color:white;
 }
 
-.signin-align {
-    position: absolute;
-    bottom: 0;
-    text-align: right;
-    padding-right: 40px;
-}
-
-
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
-		width:90%;
-		font-size: 95%;
+	width:90%;
+	font-size: 95%;
 	}
 
 	.mainHeader img {
-		width: 100%;
-		height: auto;
-		margin: 2% 0;
+	width: 100%;
+	height: auto;
+	margin: 2% 0;
 	}
-
+ 
 	.mainHeader nav { 
-		height: 160px; 
+	height: 160px; 
 
-	}
+}
 
-	.mainHeader nav ul{	
-		padding-left: 0;
-	}
+.mainHeader nav ul{	
+	padding-left: 0;
+}
 
-	.mainHeader nav ul li{
-		width: 100%;
-		text-align: center;
-	}
+.mainHeader nav ul li{
+	width: 100%;
+	text-align: center;
+}
 
 
-	.mainHeader nav a:hover, .mainHeader nav a:active,
-	.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
-		background-color: #CF5C3F;
-		text-shadow:none;
-		display: block;
-	}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+	background-color: #CF5C3F;
+	text-shadow:none;
+	display: block;
+}
 
-	.mainHeader nav ul li a {
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-	}
+.mainHeader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
 
-	.photoContainer img{
-		width: 100%;
-		height: 0;
-	}
+.photoContainer img{
+	width: 100%;
+	height: 0 auto;
+}
 
-	.description{
-		width: 96%;
+.description{
+	width: 96%;
+	
+}
 
-	}
+.description #title{
+	font-size: 22px;
+	padding-left: 2%;
+}
 
-	.description #title{
-		font-size: 22px;
-		padding-left: 2%;
-	}
-
-	.description p {
-		font-size: 14px;
-		padding-left: 2%;
-	}
+.description p {
+	font-size: 14px;
+	padding-left: 2%;
+}
 
 }
