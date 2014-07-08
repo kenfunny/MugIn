@@ -5,7 +5,8 @@
 <head>
 	<title>Mug In | Home</title>
 	<meta charset "utf=8" />
-	<link rel="stylesheet" href="../stylesheets/style.css" type="text/css"/>
+	<link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -34,29 +35,68 @@
 	</header>
 	<!--Description/Content container-->
 	<div class="description">
-		<p id="title">
-			Need to find where to study in NUS?
-		</p>
-		<p>
-			Here you can monitor the crowd in selected study place so that you can decide where to go!
-			Register or login now to enjoy more features such as FindABuddy and many more.
-		</p>
-	</div>
-	<!--Description end-->
+    <p id="title">
+      Need to find where to study in NUS?
+    </p>
+    <p>
+      Here you can monitor the crowd in selected study place so that you can decide where to go!
+      Register or login now to enjoy more features such as chatNow! and many more.
+    </p>
+  </div>
+  <!--Description end-->
+   <!--Top Spots-->
+   <h1>Top Spots</h1>
 
-    <!--Top spots-->
-	<div class="photoContainer">
-		<p> Top Spots </p>
-		<img src="../images/starbucks.jpe">
-		<img src="../images/pccomm.jpg">
-		<img src="../images/study.jpg">
-	</div>
+  <!--Carousel-->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-	<!--Copyright footer-->
-	<footer class="mainFooter">
-		<p>Copyright &copy 2014</p>
-	</footer>
-	<!--Footer ends-->
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../images/clb.jpg" alt="clb">
+      <div class="carousel-caption">
+        Central Library
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/pccomm.jpg" alt="pccomm">
+      <div class="carousel-caption">
+        PC Common
+      </div>
+    </div>
+    <div class="item">
+      <img src="../images/study.jpg" alt="study">
+      <div class="carousel-caption">
+        The Study
+      </div>
+    </div>
+  </div>
 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+  <!--Copyright footer-->
+  <footer class="mainFooter">
+    <p>Copyright &copy 2014</p>
+  </footer>
+  <!--Footer end-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
