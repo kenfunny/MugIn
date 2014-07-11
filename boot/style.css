@@ -7,8 +7,7 @@ img{
 body{
 	background-color: lightgrey;
 	font-size: 87.5%;
-	width:70%;
-	font-family: Century Gothic, sans-serif;
+	font-family: sans-serif,arial;
 	line-height: 1.5;
 	text-align: left;
 }
@@ -53,7 +52,7 @@ a:link, a:visited{
 	float:left;
 	display:inline;
 	list-style: none;
-	font-size: 14.5px;
+
 }
 
 .mainHeader nav a:link, .mainHeader nav a:visited{
@@ -61,14 +60,12 @@ a:link, a:visited{
 	display: inline-block;
 	padding: 9px 20px;
 	list-style: none;
-	
 }
 
 .mainHeader nav a:hover, .mainHeader nav a:active,
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited{
 	background-color: #CF5C3F;
 	text-shadow:none;
-	text-decoration: none;
 }
 
 .mainHeader nav ul li a {
@@ -78,33 +75,31 @@ a:link, a:visited{
 }
 
 .description{
-	width:100%;
+	width:60%;
 	background-color: #CF5C3F;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding-right: 30%;
-	padding-left: 3%;
+	padding: 0 2%;
 	margin: 1% 0;
 	
 }
 
 .description #title{
 	font-size: 36px;
-	font-family: Century Gothic, sans-serif;
+	font-family: verdana,arial;
 	padding: 1% 0;
 	
 }
 
 .description p {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .login{
 	background-color: white;
 	float: right;
-	font-size: 15px;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -114,14 +109,9 @@ a:link, a:visited{
 	margin: 1% 0;
 }
 
-.login a:hover,.register a:hover{
-	text-decoration: none;
-}
-
 .register{
 	background-color: white;
 	float: right;
-	font-size: 15px;
 	display: inline-block;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -156,7 +146,6 @@ a:link, a:visited{
 }
 
 .mainFooter p{
-	font-size: 14px;
 	width: 92%;
 	margin: 1% auto;
 	color:white;

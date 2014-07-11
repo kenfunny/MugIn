@@ -1,40 +1,51 @@
-<!--Home Page for logged in users-->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mug In | Home</title>
 
-<head>
-	<title>Mug In | Home</title>
-	<meta charset "utf=8" />
-	<link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../stylesheets/style.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
-<body class="body">
-	<header class="mainHeader">
-		<!--Header Logo-->
-		<a href ="../mugin">
-			<img src="../images/MugIn.png"> 
-		</a>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="mainHeader">
 
-		<!--User greeting-->
-		<side class="login">
-			<span> Hello, {{ user_mail }}  <a href="{{ logout }}">logout</a></span>
-		</side>
-		<!--User greeting ends-->
+    <!--Navigation bar with Home emphasis-->
+    <nav><ul>
+      <li class="active"><a href="../">Home</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../service">Services</a></li>
+      <li><a href="../contact">Contact Us</a></li>
+    </ul></nav>
+    <!--Navigation bar ends-->
 
-		<!--Navigation bar with Home emphasis-->
-		<nav><ul>
-			<li class="active"><a href="../mugin">Home</a></li>
-			<li><a href="../about">About</a></li>
-			<li><a href="../service">Services</a></li>
-			<li><a href="../contact">Contact Us</a></li>
-		</ul></nav>
-		<!--Navigation bar ends-->
+    <!--Header Logo-->
+    <a href ="../">
+      <img src="../images/MugIn.png"> 
+    </a>
 
-	</header>
-	<!--Description/Content container-->
-	<div class="description">
+    <!--Login feature-->
+    <side class="login">
+      <a href="../mugin" title="Login to Google Account!">Login</a>
+    </side>
+    <side class="register">
+      <a href="https://accounts.google.com/signup?service=mail" title="Get a Google Account!">Register</a>
+    </side>
+    <!--Login feature ends-->
+  </header>
+
+  <!--Description/Content container-->
+  <div class="description">
     <p id="title">
       Need to find where to study in NUS?
     </p>
@@ -56,7 +67,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+<!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
       <img src="../images/clb.jpg" alt="clb">
@@ -98,5 +109,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
