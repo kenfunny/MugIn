@@ -1,0 +1,43 @@
+<!-- Wish list -->
+{% extends "ChatsBase.html" %}
+{% block content %}
+{% autoescape true %}
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    
+    <div id="chatsimg">
+      <img src="{{ img_src }}">
+    </div>
+    
+    <hr>
+
+    {% for greeting in greetings %}
+      <b>{{ greeting.author.nickname() }}</b> at 
+      <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote:
+      <blockquote>{{ greeting.content }}</blockquote>
+    {% endfor %}
+
+    <form action="/sign?chatbook_name={{ chatbook_name }}" method="post">
+      <div><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div><input type="submit" value="Sign"></div>
+    </form>
+
+    <hr>
+
+    <form>Chatbox name:
+      <select name="chatbook_name">
+        <option value="admin_book">General</option>
+        <option value="pccomm">PC Common</option>
+        <option value="starbucks">Starbucks</option>
+        <option value="study">The Study</option>
+      </select>
+      <input type="submit" value="switch">
+    </form>
+
+  </body>
+</html>
+{% endautoescape %}
+{% endblock %}

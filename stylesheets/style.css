@@ -186,6 +186,12 @@ a:link, a:visited{
     padding-right: 40px;
 }
 
+#chatsimg {
+	margin: 5px;
+	position: relative;
+	width: 98%;
+	border: 5px solid red;
+}
 
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
