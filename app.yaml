@@ -23,11 +23,12 @@ handlers:
 - url: /
   script: mugin.app
 
+#The Handler to the front page which requires login
 - url: /mugin
   script: mugin.app
   login: required
 
-# All other pages require login
+# All other pages does not necessarily require login
 - url: /.*
   script: mugin.app
   login: optional
