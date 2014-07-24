@@ -4,7 +4,21 @@
 {% autoescape true %}
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mug In | About</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     
@@ -14,18 +28,28 @@
     
     <hr>
 
+    <div class="chatDiv">
+
     {% for greeting in greetings %}
-      <b>{{ greeting.author.nickname() }}</b> at 
-      <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote:
+      <p><b>{{ greeting.author.nickname() }}</b> at 
+      <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote: </p> 
       <blockquote>{{ greeting.content }}</blockquote>
+      <hr>
     {% endfor %}
 
+    </div>
+
+    <div class="chatPost">
     <form action="/sign?chatbook_name={{ chatbook_name }}" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign"></div>
+      <div class="newChat"><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div class="shout"><input type="submit" value="Shout!"></div>
     </form>
+  </div>
+
 
     <hr>
+
+    <div class="chatSwitch">
 
     <form>Chatbox name:
       <select name="chatbook_name">
@@ -36,6 +60,8 @@
       </select>
       <input type="submit" value="switch">
     </form>
+
+  </div>
 
   </body>
 </html>

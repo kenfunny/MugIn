@@ -1994,10 +1994,11 @@ select[multiple].input-lg {
   right: 15px;
 }
 .btn {
+  background-color: #666;
   display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
+  padding: 8.2% 5%;
+  margin: 0 0;
+  font-size: 15px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -2008,9 +2009,10 @@ select[multiple].input-lg {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-image: none;
+  background-color: blue;
   border: 1px solid transparent;
   border-radius: 4px;
+  
 }
 .btn:focus,
 .btn:active:focus,
@@ -2021,7 +2023,7 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333;
+  color: orange;
   text-decoration: none;
 }
 .btn:active,
@@ -2042,18 +2044,17 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: white;
+  background-color: #666;
+
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  color: white;
+  background-color: #CF5C3F;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3006,9 +3007,11 @@ input[type="button"].btn-block {
 }
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 .dropdown-toggle:focus {
   outline: 0;
+  font-size: 14px;
 }
 .dropdown-menu {
   position: absolute;
@@ -3016,13 +3019,13 @@ input[type="button"].btn-block {
   left: 0;
   z-index: 1000;
   display: none;
-  float: left;
+  float: center;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 2px 6px;
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
-  background-color: #fff;
+  background-color: #666;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, .15);
@@ -3039,6 +3042,7 @@ input[type="button"].btn-block {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+
 }
 .dropdown-menu > li > a {
   display: block;
@@ -3046,19 +3050,20 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: white;
   white-space: nowrap;
+
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #CF5C3F;
   text-decoration: none;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #fff;
+  color: #CF5C3F;
   text-decoration: none;
   background-color: #428bca;
   outline: 0;
@@ -5436,7 +5441,7 @@ button.close {
   line-height: 1;
   margin: 0 auto;
   width: 70%;
-  height: 350px;
+  height: 450px;
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
