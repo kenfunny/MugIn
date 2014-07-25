@@ -132,6 +132,28 @@ class Chatbook(webapp2.RequestHandler):
         query_params = {'chatbook_name': chatbook_name}
         self.redirect('/chats?' + urllib.urlencode(query_params))
 
+class Clib(webapp2.RequestHandler):
+    # Handler for Clib page.
+
+    def get(self):
+        template = jinja_environment.get_template('CLB.html')
+        self.response.out.write(template.render())
+
+class MedLib(webapp2.RequestHandler):
+    # Handler for MedLib page.
+
+    def get(self):
+        template = jinja_environment.get_template('MedLib.html')
+        self.response.out.write(template.render())
+
+class SciLib(webapp2.RequestHandler):
+    # Handler for SciLib page.
+
+    def get(self):
+        template = jinja_environment.get_template('SciLib.html')
+        self.response.out.write(template.render())
+
+
 app = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/mugin', MainPageUser),
@@ -140,4 +162,7 @@ app = webapp2.WSGIApplication([
 	('/contact', ContactPage),
     ('/chats', Chatlist),
     ('/sign', Chatbook),
+    ('/info/clb', Clib),
+    ('/info/medlib', MedLib),
+    ('/info/scilib', SciLib)
 ],debug=True)

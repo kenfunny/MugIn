@@ -34,13 +34,26 @@
 		<!--User greeting ends-->
 
 		<!--Navigation bar with About emphasis-->
-		<nav><ul>
-			<li><a href="../mugin">Home</a></li>
-			<li class="active"><a href="../about">About</a></li>
-			<li><a href="../service">Services</a></li>
-			<li><a href="../contact">Contact Us</a></li>
-			<li><a href="../chats">Chat Box</a><li>
-		</ul></nav>
+		 <nav><ul>
+      <li><a href="../mugin">Home</a></li>
+      <li class="active"><a href="../about">About</a></li> 
+
+      <!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Study Spots <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="../info/clb">Central Library</a></li>
+    <li><a href="../info/medlib">Medicine Library</a></li>
+    <li><a href="../info/scilib">Science Library</a></li>
+    <li class="divider"></li>
+    
+  </ul>
+  </div>
+      <li><a href="../contact">Contact Us</a></li>
+      <li><a href="../chats">Chat Box</a><li>
+      </ul></nav>
 		<!--Navigation bar ends-->
 
 	</header>
@@ -60,6 +73,11 @@
 		<p>Copyright &copy 2014</p>
 	</footer>
 	<!--Footer end-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../scripts/bootstrap.min.js"></script>
 
 </body>
 </html>

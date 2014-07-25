@@ -31,6 +31,10 @@ handlers:
   script: mugin.app
   login: required
 
+- url: /info
+  script: mugin.app
+  login: required
+
 # All other pages does not necessarily require login
 - url: /.*
   script: mugin.app
