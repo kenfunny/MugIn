@@ -233,8 +233,13 @@ a:link, a:visited{
 
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
-	width:90%;
+	width:80%;
 	font-size: 95%;
+	}
+
+	.login{
+		float: center;
+		margin: 5% 15%;
 	}
 
 	.mainHeader img {
@@ -244,12 +249,14 @@ a:link, a:visited{
 	}
  
 	.mainHeader nav { 
+		display: inline-block;
+		position: relative;
 	height: 160px; 
-
 }
 
 .mainHeader nav ul{	
 	padding-left: 0;
+	
 }
 
 .mainHeader nav ul li{
@@ -257,6 +264,11 @@ a:link, a:visited{
 	text-align: center;
 }
 
+.btn-group{
+	float: center;
+	height: auto;
+	
+}
 
 .mainHeader nav a:hover, .mainHeader nav a:active,
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited{
@@ -277,8 +289,8 @@ a:link, a:visited{
 }
 
 .description{
+	margin-top: 15%;
 	width: 96%;
-	
 }
 
 .description #title{
@@ -289,6 +301,14 @@ a:link, a:visited{
 .description p {
 	font-size: 14px;
 	padding-left: 2%;
+}
+
+#carousel-example-generic .carousel-inner img{
+		height: 10%;
+	}
+
+#chatsimg{
+	margin-top: 10%;
 }
 
 }
