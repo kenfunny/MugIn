@@ -19,7 +19,7 @@ def chatbook_key(chatbook_name=DEFAULT_CHAT_NAME):
     return ndb.Key('Chatbook', chatbook_name)
 
 class Greeting(ndb.Model):
-    """Models an individual Chatbook entry."""
+    #Models an individual Chatbook entry.
     author = ndb.UserProperty()
     content = ndb.StringProperty(indexed=False)
     date = ndb.DateTimeProperty(auto_now_add=True)
@@ -160,7 +160,7 @@ class MedLib(webapp2.RequestHandler):
             'user_mail': users.get_current_user().email(),
             'logout': users.create_logout_url(self.request.host_url),
         }
-        template = jinja_environment.get_template('Medlib.html')
+        template = jinja_environment.get_template('MedLib.html')
         self.response.out.write(template.render(template_values))
 
 class SciLib(webapp2.RequestHandler):
@@ -172,7 +172,7 @@ class SciLib(webapp2.RequestHandler):
             'user_mail': users.get_current_user().email(),
             'logout': users.create_logout_url(self.request.host_url),
         }
-        template = jinja_environment.get_template('Scilib.html')
+        template = jinja_environment.get_template('SciLib.html')
         self.response.out.write(template.render(template_values))
 
 class BizLib(webapp2.RequestHandler):
