@@ -12,7 +12,7 @@
 <div class="chatDiv">
 
   {% for greeting in greetings %}
-  <p><b>{{ greeting.author.nickname() }}</b> at 
+  <p><b>{{ greeting.author.email() }}</b> at 
     <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote: </p> 
     <blockquote>{{ greeting.content }}</blockquote>
     <hr>
