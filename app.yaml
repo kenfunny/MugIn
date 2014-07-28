@@ -1,4 +1,4 @@
-application: mugin
+application: muginnus
 version: 1
 runtime: python27
 api_version: 1
@@ -22,22 +22,29 @@ handlers:
 - url: /bootstrap
   static_dir: bootstrap
 
+- url: /_ah/login_required
+  script: muginnus.app
+
 # Handler for front page
 - url: /
-  script: mugin.app
+  script: muginnus.app
 
 #The Handler to the front page which requires login
 - url: /mugin
-  script: mugin.app
+  script: muginnus.app
   login: required
 
-- url: /info
-  script: mugin.app
+- url: /info/*
+  script: muginnus.app
+  login: required
+
+- url: /chats
+  script: muginnus.app
   login: required
 
 # All other pages does not necessarily require login
 - url: /.*
-  script: mugin.app
+  script: muginnus.app
   login: optional
 
 libraries:

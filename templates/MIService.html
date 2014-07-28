@@ -1,47 +1,68 @@
 <!--Service Page for MugIn app-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mug In | Services</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/mi.ico" />
+	<title>Mug In | Services</title>
 
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../stylesheets/style.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../stylesheets/style.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-
 <body class="body">
 	<header class="mainHeader">
+		
 		<!--Header Logo-->
 		<a href ="../">
 			<img src="../images/MugIn.png">
 		</a>
 
+		{% if user_mail %}
+		<!--User greeting-->
+		<side class="login">
+			<span> Hello, {{ user_mail }}  <a href="{{ logout }}">logout</a></span>
+		</side>
+		<!--User greeting ends-->
+		{% else %}
 		<!--Login feature-->
 		<side class="login">
-			<a href="../about" title="Login to Google Account!">Login</a>
-		</side>
-		<side class="register">
-			<a href="https://accounts.google.com/signup?service=mail" title="Get a Google Account!">Register</a>
+			<span> Login with  
+				<a href="/getGoogleOpenId"><img src="../images/google.png"></a>
+				or 
+				<a href="/getNusOpenId"><img src="../images/nus.png"></a>
+			</span>
 		</side>
 		<!--Login feature ends-->
+		{% endif %}
 
-		<!--Navigation bar with Services emphasis-->
+		<!--Navigation bar with Service emphasis-->
 		<nav><ul>
 			<li><a href="../">Home</a></li>
-			<li ><a href="../about">About</a></li>
+			<li><a href="../about">About</a></li>
 			<li class="active"><a href="../service">Services</a></li>
 			<li><a href="../contact">Contact Us</a></li>
+			{% if user_mail %}
+			<li><a href="../chats">Chat Box</a></li>
+			<!-- Single button -->
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					Study Spots<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="../info/clib">Central Library</a></li>
+					<li><a href="../info/medlib">Medicine Library</a></li>
+					<li><a href="../info/scilib">Science Library</a></li>
+					<li><a href="../info/hssml">Hon Sui Sen Memorial Library</a></li>
+      				<li><a href="../info/comms">PC / Mac Sommons</a></li>
+      				<li><a href="../info/uopen">UTown Open Area</a></li>
+      				<li><a href="../info/yih">Yusof Ishak House</a></li>
+				</ul>
+			</div>
+			{% endif %}
 		</ul></nav>
 		<!--Navigation bar ends-->
 
@@ -57,9 +78,8 @@
 	<!--Description ends-->
 
 	<!--Content-->
-
 	<div class="service">
-		<img src="../images/clb.jpg">
+		<img src="../images/clib/1.jpg">
 		<p>Central Library</p>
 		
 		<div class="servicecontent">
@@ -71,7 +91,7 @@
 	</div>
 
 	<div class="service">
-		<img src="../images/pccomm.jpg">
+		<img src="../images/comm/3.jpg">
 		<p>PC Common</p>
 		
 		<div class="servicecontent">
@@ -83,8 +103,8 @@
 	</div>
 
 	<div class="service">
-		<img src="../images/starbucks.jpe">
-		<p>Starbucks</p>
+		<img src="../images/uopen/2.jpg">
+		<p>Starbucks @ UTown</p>
 		
 		<div class="servicecontent">
 			<p>Open study place</p>
@@ -95,7 +115,7 @@
 
 	<div class="service">
 		<img src="../images/study.jpg">
-		<p>The Study</p>
+		<p>The Study @ UTown</p>
 		
 		<div class="servicecontent">
 			<p>Condusive, personal study place</p>
@@ -105,7 +125,7 @@
 	</div>
 
 	<div class="service">
-		<img src="../images/hssml.jpg">
+		<img src="../images/hssml/1.jpg">
 		<p>HSSML</p>
 		
 		<div class="servicecontent">
@@ -117,14 +137,47 @@
 	</div>
 
 	<div class="service">
-		<img src="../images/medLib.jpg">
-		<p>Medicine Library</p>
+		<img src="../images/medlib/1.jpg">
+		<p>Medical Library</p>
 		
 		<div class="servicecontent">
 			<p>Printing @ $0.04/page</p>
 			<p>PC Cluster</p>
 			<p>Seminar Room	</p>
 			
+		</div>
+	</div>
+
+	<div class="service">
+		<img src="../images/mulib/1.jpg">
+		<p>Music Library</p>
+		
+		<div class="servicecontent">
+			<p>Printing and Photocopy</p>
+			<p>Music scores collection</p>
+			<p>Lots of musical CD's for music modules</p>
+		</div>
+	</div>
+
+	<div class="service">
+		<img src="../images/scilib/2.jpg">
+		<p>Science Library</p>
+		
+		<div class="servicecontent">
+			<p>Discussion Rooms</p>
+			<p>Printing and Photocopy service</p>
+			<p>PC cluster</p>
+		</div>
+	</div>
+
+	<div class="service">
+		<img src="../images/yih/1.jpg">
+		<p>NUSSU Student Lounge</p>
+		
+		<div class="servicecontent">
+			<p>Board games, Foosball, Pool</p>
+			<p>Television for electronic games</p>
+			<p>Suitable for discussion</p>
 		</div>
 	</div>
 	
@@ -135,6 +188,12 @@
 		<p>Copyright &copy 2014</p>
 	</footer>
 	<!--Footer end-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../scripts/bootstrap.min.js"></script>
+
 
 </body>
 </html>

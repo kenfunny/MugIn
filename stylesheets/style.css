@@ -125,21 +125,13 @@ a:link, a:visited{
 	margin: 1% 0;
 }
 
-.login a:hover,.register a:hover{
-	text-decoration: none;
+.login img{
+	height: 20px;
+	width: auto;
 }
 
-.register{
-	background-color: white;
-	float: right;
-	font-size: 15px;
-	display: inline-block;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	list-style: none;
-	padding: 1% 3%;
-	margin: 1% 5px;
+.login a:hover,.register a:hover{
+	text-decoration: none;
 }
 
 .photoContainer p {
