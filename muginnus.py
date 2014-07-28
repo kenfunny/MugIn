@@ -176,7 +176,7 @@ class SciLib(webapp2.RequestHandler):
         self.response.out.write(template.render(template_values))
 
 class BizLib(webapp2.RequestHandler):
-    # Handler for SciLib page.
+    # Handler for BizLib page.
 
     def get(self):
         user = users.get_current_user()
@@ -188,7 +188,7 @@ class BizLib(webapp2.RequestHandler):
         self.response.out.write(template.render(template_values))
 
 class PCcomm(webapp2.RequestHandler):
-    # Handler for SciLib page.
+    # Handler for Comms page.
 
     def get(self):
         user = users.get_current_user()
@@ -200,7 +200,7 @@ class PCcomm(webapp2.RequestHandler):
         self.response.out.write(template.render(template_values))
 
 class UOpen(webapp2.RequestHandler):
-    # Handler for SciLib page.
+    # Handler for Uopen page.
 
     def get(self):
         user = users.get_current_user()
@@ -212,7 +212,7 @@ class UOpen(webapp2.RequestHandler):
         self.response.out.write(template.render(template_values))
 
 class YIH(webapp2.RequestHandler):
-    # Handler for SciLib page.
+    # Handler for yih page.
 
     def get(self):
         user = users.get_current_user()

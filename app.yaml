@@ -29,11 +29,7 @@ handlers:
 - url: /
   script: muginnus.app
 
-#The Handler to the front page which requires login
-- url: /mugin
-  script: muginnus.app
-  login: required
-
+#The Handler to the pages which requires login
 - url: /info/*
   script: muginnus.app
   login: required
