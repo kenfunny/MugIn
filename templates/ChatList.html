@@ -13,38 +13,39 @@
 
   {% for greeting in greetings %}
   <p><b>{{ greeting.author.email() }}</b> at 
-    <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote: </p> 
-    <blockquote>{{ greeting.content }}</blockquote>
-    <hr>
-    {% endfor %}
-
-  </div>
-
-  <div class="chatPost">
-    <form action="/sign?chatbook_name={{ chatbook_name }}" method="post">
-      <div class="newChat"><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div class="shout"><input type="submit" value="Shout!"></div>
-    </form>
-  </div>
-
-
+    <i>{{ greeting.date.strftime('%d-%m-%Y %X')  }}</i> wrote: 
+  </p>
+  <blockquote><pre>{{ greeting.content }}</pre></blockquote>
   <hr>
+  {% endfor %}
 
-  <div class="chatSwitch">
-    <form>Chatbox name:
-      <select name="chatbook_name">
-        <option value="admin_book">General</option>
-        <option value="clib">Central Library</option>
-        <option value="medlib">Medical Library</option>
-        <option value="scilib">Science Library</option>
-        <option value="hssml">Hon Sui Sen Library</option>
-        <option value="comms">PC / Mac Commons</option>
-        <option value="uopen">UTown Open area</option>
-        <option value="yih">Yusof Ishak House</option>
-      </select>
-      <input type="submit" value="switch">
-    </form>
-  </div>
+</div>
+
+<div class="chatPost">
+  <form action="/sign?chatbook_name={{ chatbook_name }}" method="post">
+    <div class="newChat"><textarea name="content" rows="3" cols="60"></textarea></div>
+    <div class="shout"><input type="submit" value="Shout!"></div>
+  </form>
+</div>
+
+
+<hr>
+
+<div class="chatSwitch">
+  <form>Chatbox name:
+    <select name="chatbook_name">
+      <option value="admin_book">General</option>
+      <option value="clib">Central Library</option>
+      <option value="medlib">Medical Library</option>
+      <option value="scilib">Science Library</option>
+      <option value="hssml">Hon Sui Sen Library</option>
+      <option value="comms">PC / Mac Commons</option>
+      <option value="uopen">UTown Open area</option>
+      <option value="yih">Yusof Ishak House</option>
+    </select>
+    <input type="submit" value="switch">
+  </form>
+</div>
 </div>
 </html>
 {% endautoescape %}
